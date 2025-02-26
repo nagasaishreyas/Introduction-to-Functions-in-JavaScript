@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p>A function can access variable inside the function</p>
+        <button type="button" ondblclick="myfunction()">CLICK ME!</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            var b = 5; //global variable
+            function myfunction() {
+                var a = 4; //local variable
+                document.getElementById("demo").innerHTML = b * a;
+
+            }
+            document.getElementById("demo1").innerHTML = a;
+            document.getElementById("demo2").innerHTML = b;
+        </script>
+    </body>
+</html>
